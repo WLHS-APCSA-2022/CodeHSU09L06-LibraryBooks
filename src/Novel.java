@@ -16,8 +16,17 @@ public class Novel extends Book{
         return genre;
     }
 
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
     @Override
     public String toString(){
-        return super.toString() + "\n" + "Genre: " + genre + "Pages: " + pages;
+        return "Title: " + super.getTitle() + "\n" + "Author: " + super.getAuthor() + "\n" +
+                "Genre: " + genre + "\n"+ "Pages: " + pages;
     }
 }

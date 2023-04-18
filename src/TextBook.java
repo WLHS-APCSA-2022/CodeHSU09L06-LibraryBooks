@@ -17,8 +17,17 @@ public class TextBook extends Book{
         return subject;
     }
 
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
     @Override
     public String toString(){
-        return super.toString() + "\n" + "Subject: " + subject + "\n"+ "Edition: " + edition;
+        return "Title: " + super.getTitle() + "\n" + "Author: " + super.getAuthor() +
+                "\n" + "Subject: " + subject + "\n"+ "Edition: " + edition;
     }
 }
